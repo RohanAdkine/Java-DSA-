@@ -100,6 +100,18 @@ public class operations
             return val;
         }
     }
+    public static void reverse(){
+        Node prev=null;
+        Node curr=head;
+        Node next;
+        while(curr !=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        head=prev;
+    }
     public static void print()
     {
         Node temp=head;
@@ -118,6 +130,8 @@ public class operations
         ll.removeFirst();
         ll.removeLast();
         ll.add(0,3);
+        ll.print();
+        ll.reverse();
         ll.print();
     }
 }

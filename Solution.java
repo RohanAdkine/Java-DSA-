@@ -6,6 +6,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();
         double d=scan.nextDouble();
+        scan.nextLine();
         String s = scan.nextLine();
         
 

@@ -14,7 +14,7 @@ public class operations
     public static Node tail;
     public static int size;
 
-    public static void addFirst(int data)
+    public static void addFirst(int data)  //O(1)
     {
         Node newnode = new Node(data);
         size++;
@@ -27,7 +27,7 @@ public class operations
         return;
     }
 
-    public static void addLast(int data)
+    public static void addLast(int data)  //O(1)
     {
         Node newnode = new Node(data);
         size++;
@@ -40,7 +40,7 @@ public class operations
         return;
     }
 
-    public static void add(int idx,int data)
+    public static void add(int idx,int data)  //O(n)
     {
         if(idx==0){
             addFirst(data);
@@ -57,7 +57,7 @@ public class operations
         temp.next=newnode;
         return;
     }
-    public static int removeFirst()
+    public static int removeFirst()   //O(1)
     {
         if(size==0){
             System.out.println("LinkList is Empty");
@@ -76,7 +76,7 @@ public class operations
             return val;
         }
     }
-    public static int removeLast()
+    public static int removeLast()  //O(n)
     {
         if(size==0){
             System.out.println("LinkList is Empty");
@@ -100,7 +100,8 @@ public class operations
             return val;
         }
     }
-    public static void reverse(){
+    public static void reverse() //O(n)
+    {
         Node prev=null;
         Node curr=head;
         Node next;
@@ -112,7 +113,7 @@ public class operations
         }
         head=prev;
     }
-    public static void print()
+    public static void print()  //O(n)
     {
         Node temp=head;
         while(temp!=null){

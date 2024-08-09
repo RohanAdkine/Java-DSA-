@@ -1,7 +1,8 @@
 import java.util.*;
 
 public class SelectionSort {
-    public static void selectionSort(int arr[]) {
+    public static void selectionSort(int arr[]) //O(n^2)
+    {
         for(int turn=0; turn<arr.length; turn++) {
             int minPos = turn;
             for(int j=turn+1; j<arr.length; j++) {

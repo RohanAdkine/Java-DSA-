@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class InsertionSorting
  {
     public static void insertionSort(int arr[])  //O(n^2)

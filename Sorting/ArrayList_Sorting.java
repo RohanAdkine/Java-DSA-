@@ -10,12 +10,13 @@ public class ArrayList_Sorting {
         list.add(6);
         list.add(7);
         list.add(1);
+        list.add(2);
 
         //ascending order
         Collections.sort(list);
         System.out.println(list);
 
-        //descending order
+        //descending order using collection
         Collections.sort(list, Collections.reverseOrder());
         System.out.println(list);
 

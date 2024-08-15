@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-public class multidimensional {
+public class Multidimensional 
+{
     public static void main(String args[]) {
         ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
         ArrayList<Integer> list1 = new ArrayList<>();
